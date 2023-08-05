@@ -1,0 +1,15 @@
+//find odd sum 
+//no push to git hub
+function getSumOfArray(numbers){
+    let sum = 0;
+    for(let i = 0; i < numbers.length; i++){
+        const index = 0;
+        const element = numbers[index];
+        sum = sum + element
+        console.log(index,element,sum);
+    }
+    return sum;
+}
+
+const myNumbers = [12, 65, 45, 78, 32, 45, 91];
+getSumOfArray(myNumbers);
