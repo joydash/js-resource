@@ -27,3 +27,12 @@ let num2 = 97;
 let num3 = 99;
 let win = Math.max(num1, num2, num3);
 console.log(win)
+
+
+let flt = 1254.67;
+let roundNumber = Math.floor(flt);
+console.log("floor number is :" , roundNumber);
+
+const number = -78; 
+const answer = Math.abs(number); 
+console.log(answer);

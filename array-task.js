@@ -51,3 +51,23 @@
 // var myList = ['myphone', 'charger', 'laptop'];
 // myList.shift();
 // console.log(myList);
+
+//problem : Array of duplicate element remove
+
+const names = ['abul', 'babuk', 'cabul', 'dabul', ' ebul', 'abul', 'gabul', 'cabul', 'babul', 'babul', 'abul', 'tulbul'];
+console.log(names);
+
+    function detectName(names){
+        const unique = [];
+        for(let i = 0; i< names.length; i++){
+            const name = names[i];
+            console.log(name);
+            if(unique.includes(name) === false){
+                unique.push(name);
+            }
+        }
+        return unique;
+    }
+
+const uniqueName = detectName(names);
+console.log(uniqueName);
