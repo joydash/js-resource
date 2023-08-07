@@ -110,7 +110,26 @@ if the number of divisale by 3 and 5 than instead of the number show "foobar"
 // #problem solving
 //Shopping card all product quantity added total price 
 
-const ShoppingCart [
+let ShoppingCard = [
     {name:'shoe', price: 6500 , quantity: 2},
 
-]
+    {name:'shirt', price: 2200 , quantity: 4},
+
+    {name:'pent', price: 3700 , quantity: 4},
+
+    {name:'belt', price: 600 , quantity: 2}
+
+];
+function totalCost(products){
+    let sum = 0;
+    for(let i = 0; i < products.length ; i++){
+        const product = products[i];
+        console.log(product);
+        const productTotal = product.price * product.quantity;
+        sum = sum + productTotal; 
+    }
+    return sum;
+}
+
+const expense = totalCost(ShoppingCard);
+console.log('Your total expense today is :' , expense);
